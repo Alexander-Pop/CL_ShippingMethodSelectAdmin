@@ -1,0 +1,26 @@
+{
+  "name": "codelegacy/shippingconfig",
+  "description": "Codelegacy Shippingconfig extension - adds select field with all active shipping Method",
+  "license": [
+    "MT"
+  ],
+  "version": "1.0.0",
+  "suggest": {
+    "magento/module-config": "101.1.*"
+  },
+  "type": "magento2-module",
+  "authors": [
+    {
+      "name": "Codelegacy Shippingconfig",
+      "email": "alexander@codelegacy.com"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Codelegacy\\Shippingconfig\\": ""
+    }
+  }
+}

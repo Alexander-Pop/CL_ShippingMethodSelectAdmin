@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!--
+/* Glory to Ukraine! Glory to the heros! */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+  	<module name="Codelegacy_Shippingconfig" setup_version="1.0.0">
+  		<sequence>
+            <module name="Codelegacy_Core"/>
+        </sequence>
+  	</module>
+</config>

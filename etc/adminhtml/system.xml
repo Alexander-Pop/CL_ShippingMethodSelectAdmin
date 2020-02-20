@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!--
+/* Glory to Ukraine! Glory to the heros! */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section
+            id="golden_avalara"
+            translate="label"
+            sortOrder="100"
+            showInDefault="1"
+            showInWebsite="1"
+            showInStore="1">
+            <class>separator-top</class>
+            <label>Codelegacy Shippingconfig</label>
+            <tab>golden_extensions</tab>
+            <resource>Codelegacy_Shippingconfig::config</resource>
+            <group
+                id="general"
+                translate="label"
+                sortOrder="10"
+                showInDefault="1"
+                showInWebsite="0"
+                showInStore="0">
+                <label>General Configuration</label>
+                <comment>This is Configuration page for custom Shippingconfig Selector</comment>
+                <field
+                    id="enabled"
+                    translate="label"
+                    type="select"
+                    sortOrder="10"
+                    showInDefault="1"
+                    showInWebsite="0"
+                    showInStore="0">
+                    <label>Is Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[Some comments]]></comment>
+                </field>
+                <field
+                    id="shipping_method"
+                    translate="label"
+                    type="select"
+                    sortOrder="20"
+                    showInDefault="1"
+                    showInWebsite="1"
+                    showInStore="1">
+                    <label>Shipping Method Select</label>
+                    <comment><![CDATA[Select shipping method]]></comment>
+                    <frontend_model>Codelegacy\Shippingconfig\Model\Config\Shipping</frontend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
